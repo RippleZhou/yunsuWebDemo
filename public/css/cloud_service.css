@@ -1,0 +1,267 @@
+@charset "UTF-8";
+.relative {
+  position: relative;
+  height: 100%;
+}
+
+body {
+  font-family: 微软雅黑 !important;
+}
+
+@media screen and (min-width: 960px) and (max-width: 1440px) {
+  .layout-page.layout-content .banner {
+    height: 306px;
+  }
+}
+.layout-content .banner {
+  width: 100%;
+  height: 428px;
+  display: inline-block;
+}
+.layout-content .content {
+  padding-top: 60px;
+}
+.layout-content .content .main-title {
+  font-size: 14px;
+  color: #333;
+  margin-bottom: 96px;
+}
+.layout-content .content .main-title .title {
+  font-size: 28px;
+  text-align: center;
+  margin-bottom: 44px;
+}
+.layout-content .content span {
+  font-size: 18px;
+}
+.layout-content .content .contentList {
+  margin-top: 48px;
+  margin-bottom: 120px;
+}
+.layout-content .content .contentList .contentItems {
+  font-size: 12px;
+  color: #696969;
+  padding-left: 92px;
+  margin-bottom: 84px;
+}
+.layout-content .content .contentList .contentItems .title {
+  color: #333;
+  font-size: 18px;
+  position: relative;
+}
+.layout-content .content .contentList .contentItems:first-child {
+  position: relative;
+}
+.layout-content .content .contentList .contentItems:first-child::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: -1118px;
+  right: 0;
+  bottom: 0;
+  margin: auto;
+  width: 82px;
+  height: 82px;
+  background: url("../../app/images/icon2.png") no-repeat -278px -268px;
+  background-size: 448%;
+}
+.layout-content .content .contentList .contentItems:last-child {
+  position: relative;
+}
+.layout-content .content .contentList .contentItems:last-child::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: -1118px;
+  right: 0;
+  bottom: 0;
+  margin: auto;
+  width: 82px;
+  height: 82px;
+  background: url("../../app/images/icon2.png") no-repeat -278px -696px;
+  background-size: 448%;
+}
+.layout-content .content .contentList .contentItems:nth-child(2) {
+  position: relative;
+}
+.layout-content .content .contentList .contentItems:nth-child(2)::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: -1118px;
+  right: 0;
+  bottom: 0;
+  margin: auto;
+  width: 82px;
+  height: 82px;
+  background: url("../../app/images/icon2.png") no-repeat -278px -351px;
+  background-size: 448%;
+}
+.layout-content .content .contentList .contentItems:nth-child(3) {
+  position: relative;
+}
+.layout-content .content .contentList .contentItems:nth-child(3)::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: -1118px;
+  right: 0;
+  bottom: 0;
+  margin: auto;
+  width: 82px;
+  height: 82px;
+  background: url("../../app/images/icon2.png") no-repeat -278px -439px;
+  background-size: 448%;
+}
+.layout-content .content .contentList .contentItems:nth-child(4) {
+  position: relative;
+}
+.layout-content .content .contentList .contentItems:nth-child(4)::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: -1118px;
+  right: 0;
+  bottom: 0;
+  margin: auto;
+  width: 82px;
+  height: 82px;
+  background: url("../../app/images/icon2.png") no-repeat -278px -525px;
+  background-size: 448%;
+}
+.layout-content .content .contentList .contentItems:nth-child(5) {
+  position: relative;
+}
+.layout-content .content .contentList .contentItems:nth-child(5)::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: -1118px;
+  right: 0;
+  bottom: 0;
+  margin: auto;
+  width: 82px;
+  height: 82px;
+  background: url("../../app/images/icon2.png") no-repeat -278px -612px;
+  background-size: 448%;
+}
+.layout-content .content .contentList .contentItems1 {
+  -moz-transition: all 1.5s;
+  -o-transition: all 1.5s;
+  -webkit-transition: all 1.5s;
+  transition: all 1.5s;
+  -moz-transform: translateY(1000px);
+  -ms-transform: translateY(1000px);
+  -webkit-transform: translateY(1000px);
+  transform: translateY(1000px);
+}
+.layout-content .content .contentList .contentItems1.fade-in {
+  -moz-transition: all 1.5s;
+  -o-transition: all 1.5s;
+  -webkit-transition: all 1.5s;
+  transition: all 1.5s;
+  -moz-transform: translateY(0px);
+  -ms-transform: translateY(0px);
+  -webkit-transform: translateY(0px);
+  transform: translateY(0px);
+}
+.layout-content .content .contentList .contentItems2 {
+  -moz-transition: all 2s;
+  -o-transition: all 2s;
+  -webkit-transition: all 2s;
+  transition: all 2s;
+  -moz-transform: translateY(1000px);
+  -ms-transform: translateY(1000px);
+  -webkit-transform: translateY(1000px);
+  transform: translateY(1000px);
+}
+.layout-content .content .contentList .contentItems2.fade-in {
+  -moz-transition: all 2s;
+  -o-transition: all 2s;
+  -webkit-transition: all 2s;
+  transition: all 2s;
+  -moz-transform: translateY(0px);
+  -ms-transform: translateY(0px);
+  -webkit-transform: translateY(0px);
+  transform: translateY(0px);
+}
+.layout-content .content .contentList .contentItems3 {
+  -moz-transition: all 2.5s;
+  -o-transition: all 2.5s;
+  -webkit-transition: all 2.5s;
+  transition: all 2.5s;
+  -moz-transform: translateY(1000px);
+  -ms-transform: translateY(1000px);
+  -webkit-transform: translateY(1000px);
+  transform: translateY(1000px);
+}
+.layout-content .content .contentList .contentItems3.fade-in {
+  -moz-transition: all 2.5s;
+  -o-transition: all 2.5s;
+  -webkit-transition: all 2.5s;
+  transition: all 2.5s;
+  -moz-transform: translateY(0px);
+  -ms-transform: translateY(0px);
+  -webkit-transform: translateY(0px);
+  transform: translateY(0px);
+}
+.layout-content .content .contentList .contentItems4 {
+  -moz-transition: all 3s;
+  -o-transition: all 3s;
+  -webkit-transition: all 3s;
+  transition: all 3s;
+  -moz-transform: translateY(1000px);
+  -ms-transform: translateY(1000px);
+  -webkit-transform: translateY(1000px);
+  transform: translateY(1000px);
+}
+.layout-content .content .contentList .contentItems4.fade-in {
+  -moz-transition: all 3s;
+  -o-transition: all 3s;
+  -webkit-transition: all 3s;
+  transition: all 3s;
+  -moz-transform: translateY(0px);
+  -ms-transform: translateY(0px);
+  -webkit-transform: translateY(0px);
+  transform: translateY(0px);
+}
+.layout-content .content .contentList .contentItems5 {
+  -moz-transition: all 3.5s;
+  -o-transition: all 3.5s;
+  -webkit-transition: all 3.5s;
+  transition: all 3.5s;
+  -moz-transform: translateY(1000px);
+  -ms-transform: translateY(1000px);
+  -webkit-transform: translateY(1000px);
+  transform: translateY(1000px);
+}
+.layout-content .content .contentList .contentItems5.fade-in {
+  -moz-transition: all 3.5s;
+  -o-transition: all 3.5s;
+  -webkit-transition: all 3.5s;
+  transition: all 3.5s;
+  -moz-transform: translateY(0px);
+  -ms-transform: translateY(0px);
+  -webkit-transform: translateY(0px);
+  transform: translateY(0px);
+}
+.layout-content .content .contentList .contentItems6 {
+  -moz-transition: all 4s;
+  -o-transition: all 4s;
+  -webkit-transition: all 4s;
+  transition: all 4s;
+  -moz-transform: translateY(1000px);
+  -ms-transform: translateY(1000px);
+  -webkit-transform: translateY(1000px);
+  transform: translateY(1000px);
+}
+.layout-content .content .contentList .contentItems6.fade-in {
+  -moz-transition: all 4s;
+  -o-transition: all 4s;
+  -webkit-transition: all 4s;
+  transition: all 4s;
+  -moz-transform: translateY(0px);
+  -ms-transform: translateY(0px);
+  -webkit-transform: translateY(0px);
+  transform: translateY(0px);
+}

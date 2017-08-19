@@ -1,0 +1,361 @@
+@charset "UTF-8";
+.relative {
+  position: relative;
+  height: 100%;
+}
+
+body {
+  font-family: 微软雅黑 !important;
+}
+
+.animations .small-item {
+  position: relative;
+  overflow: hidden;
+  background-color: transparent !important;
+}
+.animations .small-item i {
+  display: block;
+  width: 76px;
+  height: 84px;
+  margin: 32px auto 0;
+  background: url("../../app/images/icon1.png") no-repeat -225px -40px;
+}
+.animations .small-item:nth-child(2) i {
+  display: block;
+  width: 84px;
+  height: 84px;
+  margin: 32px auto 0;
+  background: url("../../app/images/icon1.png") no-repeat -388px -43px;
+}
+.animations .small-item:nth-child(3) i {
+  display: block;
+  width: 84px;
+  height: 84px;
+  margin: 32px auto 0;
+  background: url("../../app/images/icon1.png") no-repeat -236px -127px;
+}
+.animations .small-item:nth-child(4) i {
+  display: block;
+  width: 84px;
+  height: 84px;
+  margin: 32px auto 0;
+  background: url("../../app/images/icon1.png") no-repeat -408px -130px;
+}
+.animations .small-item u {
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  width: 154px;
+  height: 154px;
+  margin: 0 auto;
+  background: url("../../app/images/icon1.png") no-repeat 0px -40px;
+  -webkit-transition: all .5s ease-in-out 0s;
+  -moz-transition: all .5s ease-in-out 0s;
+  -ms-transition: all .5s ease-in-out 0s;
+  -o-transition: all .5s ease-in-out 0s;
+  transition: all .5s ease-in-out 0s;
+}
+.animations .small-item u.cl {
+  clip: rect(0px, 156px, 156px, 78px);
+}
+.animations .small-item u.cr {
+  clip: rect(0px, 78px, 156px, 0px);
+}
+.animations .small-item strong {
+  display: block;
+  margin-top: 70px;
+  font-size: 16px;
+  font-weight: normal;
+  text-align: center;
+}
+.animations .small-item p {
+  position: relative;
+  top: 200px;
+  padding: 0 1em;
+  color: White;
+  font-family: Arial, "宋体";
+  font-size: 12px;
+  line-height: 20px;
+  text-align: justify;
+}
+.animations .small-item:nth-child(1):hover {
+  background-color: #00a8ff !important;
+  -webkit-transition: all .5s ease-in-out .3s;
+  -moz-transition: all .5s ease-in-out .3s;
+  -ms-transition: all .5s ease-in-out .3s;
+  -o-transition: all .5s ease-in-out .3s;
+  transition: all .5s ease-in-out .3s;
+}
+.animations .small-item:nth-child(1):hover i {
+  background-position: -154px -40px;
+  -webkit-transition: all .5s ease-in-out .4s;
+  -moz-transition: all .5s ease-in-out .4s;
+  -ms-transition: all .5s ease-in-out .4s;
+  -o-transition: all .5s ease-in-out .4s;
+  transition: all .5s ease-in-out .4s;
+}
+.animations .small-item:nth-child(1):hover .cl {
+  clip: rect(0px, 156px, -10px, 78px);
+}
+.animations .small-item:nth-child(1):hover .cr {
+  clip: rect(156px, 78px, 156px, 0px);
+}
+.animations .small-item:nth-child(1):hover strong {
+  color: White;
+  -webkit-transition-delay: .4s;
+  -moz-transition-delay: .4s;
+  -ms-transition-delay: .4s;
+  -o-transition-delay: .4s;
+  transition-delay: .4s;
+}
+.animations .small-item:nth-child(1):hover p {
+  top: 20px;
+  -webkit-transition: all .3s ease-in-out .5s;
+  -moz-transition: all .3s ease-in-out .5s;
+  -ms-transition: all .3s ease-in-out .5s;
+  -o-transition: all .3s ease-in-out .5s;
+  transition: all .3s ease-in-out .5s;
+}
+.animations .small-item:nth-child(2):hover {
+  background-color: #00a8ff !important;
+  -webkit-transition: all .5s ease-in-out .3s;
+  -moz-transition: all .5s ease-in-out .3s;
+  -ms-transition: all .5s ease-in-out .3s;
+  -o-transition: all .5s ease-in-out .3s;
+  transition: all .5s ease-in-out .3s;
+}
+.animations .small-item:nth-child(2):hover i {
+  background-position: -304px -43px;
+  -webkit-transition: all .5s ease-in-out .4s;
+  -moz-transition: all .5s ease-in-out .4s;
+  -ms-transition: all .5s ease-in-out .4s;
+  -o-transition: all .5s ease-in-out .4s;
+  transition: all .5s ease-in-out .4s;
+}
+.animations .small-item:nth-child(2):hover .cl {
+  clip: rect(0px, 156px, -10px, 78px);
+}
+.animations .small-item:nth-child(2):hover .cr {
+  clip: rect(156px, 78px, 156px, 0px);
+}
+.animations .small-item:nth-child(2):hover strong {
+  color: White;
+  -webkit-transition-delay: .4s;
+  -moz-transition-delay: .4s;
+  -ms-transition-delay: .4s;
+  -o-transition-delay: .4s;
+  transition-delay: .4s;
+}
+.animations .small-item:nth-child(2):hover p {
+  top: 20px;
+  -webkit-transition: all .3s ease-in-out .5s;
+  -moz-transition: all .3s ease-in-out .5s;
+  -ms-transition: all .3s ease-in-out .5s;
+  -o-transition: all .3s ease-in-out .5s;
+  transition: all .3s ease-in-out .5s;
+}
+.animations .small-item:nth-child(3):hover {
+  background-color: #00a8ff !important;
+  -webkit-transition: all .5s ease-in-out .3s;
+  -moz-transition: all .5s ease-in-out .3s;
+  -ms-transition: all .5s ease-in-out .3s;
+  -o-transition: all .5s ease-in-out .3s;
+  transition: all .5s ease-in-out .3s;
+}
+.animations .small-item:nth-child(3):hover i {
+  background-position: -154px -127px;
+  -webkit-transition: all .5s ease-in-out .4s;
+  -moz-transition: all .5s ease-in-out .4s;
+  -ms-transition: all .5s ease-in-out .4s;
+  -o-transition: all .5s ease-in-out .4s;
+  transition: all .5s ease-in-out .4s;
+}
+.animations .small-item:nth-child(3):hover .cl {
+  clip: rect(0px, 156px, -10px, 78px);
+}
+.animations .small-item:nth-child(3):hover .cr {
+  clip: rect(156px, 78px, 156px, 0px);
+}
+.animations .small-item:nth-child(3):hover strong {
+  color: White;
+  -webkit-transition-delay: .4s;
+  -moz-transition-delay: .4s;
+  -ms-transition-delay: .4s;
+  -o-transition-delay: .4s;
+  transition-delay: .4s;
+}
+.animations .small-item:nth-child(3):hover p {
+  top: 20px;
+  -webkit-transition: all .3s ease-in-out .5s;
+  -moz-transition: all .3s ease-in-out .5s;
+  -ms-transition: all .3s ease-in-out .5s;
+  -o-transition: all .3s ease-in-out .5s;
+  transition: all .3s ease-in-out .5s;
+}
+.animations .small-item:nth-child(4):hover {
+  background-color: #00a8ff !important;
+  -webkit-transition: all .5s ease-in-out .3s;
+  -moz-transition: all .5s ease-in-out .3s;
+  -ms-transition: all .5s ease-in-out .3s;
+  -o-transition: all .5s ease-in-out .3s;
+  transition: all .5s ease-in-out .3s;
+}
+.animations .small-item:nth-child(4):hover i {
+  background-position: -324px -130px;
+  -webkit-transition: all .5s ease-in-out .4s;
+  -moz-transition: all .5s ease-in-out .4s;
+  -ms-transition: all .5s ease-in-out .4s;
+  -o-transition: all .5s ease-in-out .4s;
+  transition: all .5s ease-in-out .4s;
+}
+.animations .small-item:nth-child(4):hover .cl {
+  clip: rect(0px, 156px, -10px, 78px);
+}
+.animations .small-item:nth-child(4):hover .cr {
+  clip: rect(156px, 78px, 156px, 0px);
+}
+.animations .small-item:nth-child(4):hover strong {
+  color: White;
+  -webkit-transition-delay: .4s;
+  -moz-transition-delay: .4s;
+  -ms-transition-delay: .4s;
+  -o-transition-delay: .4s;
+  transition-delay: .4s;
+}
+.animations .small-item:nth-child(4):hover p {
+  top: 20px;
+  -webkit-transition: all .3s ease-in-out .5s;
+  -moz-transition: all .3s ease-in-out .5s;
+  -ms-transition: all .3s ease-in-out .5s;
+  -o-transition: all .3s ease-in-out .5s;
+  transition: all .3s ease-in-out .5s;
+}
+
+.swiper-slide {
+  width: 282px;
+  border-bottom: 4px solid #00a8ff;
+  cursor: pointer;
+  overflow: hidden;
+}
+.swiper-slide .shade {
+  position: absolute;
+  width: 282px;
+  height: 300px;
+  margin-top: -300px;
+  background: Black;
+  -moz-opacity: 0.7;
+  opacity: 0.7;
+  filter: alpha(opacity=70);
+  -webkit-transition: all .3s ease-in-out 0s;
+  -moz-transition: all .3s ease-in-out 0s;
+  -ms-transition: all .3s ease-in-out 0s;
+  -o-transition: all .3s ease-in-out 0s;
+  transition: all .3s ease-in-out 0s;
+  z-index: 10;
+}
+.swiper-slide .shade u {
+  display: block;
+  margin: 0 auto;
+  margin-top: 151px;
+  width: 76px;
+  height: 76px;
+  background: url("../../app/images/icon1.png") no-repeat 6px -213px;
+  background-size: 768%;
+}
+.swiper-slide p {
+  position: absolute;
+  width: 282px;
+  padding: 10px;
+  box-sizing: border-box;
+  color: #999;
+  font-family: Arial, "宋体";
+  font-size: 12px;
+  line-height: 26px;
+  -webkit-transition: all .3s ease-in-out 0s;
+  -moz-transition: all .3s ease-in-out 0s;
+  -ms-transition: all .3s ease-in-out 0s;
+  -o-transition: all .3s ease-in-out 0s;
+  transition: all .3s ease-in-out 0s;
+  z-index: 10;
+}
+.swiper-slide p strong {
+  color: #222;
+  font-family: Arial, "微软雅黑";
+  font-size: 16px;
+  font-weight: normal;
+  -webkit-transition: all .3s ease-in-out 0s;
+  -moz-transition: all .3s ease-in-out 0s;
+  -ms-transition: all .3s ease-in-out 0s;
+  -o-transition: all .3s ease-in-out 0s;
+  transition: all .3s ease-in-out 0s;
+}
+.swiper-slide .bg {
+  width: 282px;
+  height: 100px;
+  background-color: #fff;
+  -moz-opacity: 0.5;
+  opacity: 0.5;
+  filter: alpha(opacity=50);
+  -webkit-transition: all .3s ease-in-out 0s;
+  -moz-transition: all .3s ease-in-out 0s;
+  -ms-transition: all .3s ease-in-out 0s;
+  -o-transition: all .3s ease-in-out 0s;
+  transition: all .3s ease-in-out 0s;
+}
+.swiper-slide .bg u {
+  display: block;
+  position: absolute;
+  width: 282px;
+  height: 105px;
+  margin-top: 150px;
+  background-color: #00a8ff;
+  -webkit-transition: all .3s ease-in-out 0s;
+  -moz-transition: all .3s ease-in-out 0s;
+  -ms-transition: all .3s ease-in-out 0s;
+  -o-transition: all .3s ease-in-out 0s;
+  transition: all .3s ease-in-out 0s;
+}
+.swiper-slide:hover .shade {
+  margin-top: 0px;
+  -webkit-transition: all .3s ease-in-out 0s;
+  -moz-transition: all .3s ease-in-out 0s;
+  -ms-transition: all .3s ease-in-out 0s;
+  -o-transition: all .3s ease-in-out 0s;
+  transition: all .3s ease-in-out 0s;
+}
+.swiper-slide:hover .bg {
+  -moz-opacity: 1;
+  opacity: 1;
+  filter: alpha(opacity=100);
+  -webkit-transition: all .3s ease-in-out 0s;
+  -moz-transition: all .3s ease-in-out 0s;
+  -ms-transition: all .3s ease-in-out 0s;
+  -o-transition: all .3s ease-in-out 0s;
+  transition: all .3s ease-in-out 0s;
+}
+.swiper-slide:hover .bg u {
+  margin-top: 0px;
+  -webkit-transition: all .3s ease-in-out 0s;
+  -moz-transition: all .3s ease-in-out 0s;
+  -ms-transition: all .3s ease-in-out 0s;
+  -o-transition: all .3s ease-in-out 0s;
+  transition: all .3s ease-in-out 0s;
+}
+.swiper-slide:hover p {
+  color: White;
+  -webkit-transition: all .3s ease-in-out 0s;
+  -moz-transition: all .3s ease-in-out 0s;
+  -ms-transition: all .3s ease-in-out 0s;
+  -o-transition: all .3s ease-in-out 0s;
+  transition: all .3s ease-in-out 0s;
+}
+.swiper-slide:hover p strong {
+  color: White;
+  -webkit-transition: all .3s ease-in-out 0s;
+  -moz-transition: all .3s ease-in-out 0s;
+  -ms-transition: all .3s ease-in-out 0s;
+  -o-transition: all .3s ease-in-out 0s;
+  transition: all .3s ease-in-out 0s;
+}

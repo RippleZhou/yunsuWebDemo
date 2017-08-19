@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>云塑-产品与服务</title>
+    <link rel="stylesheet" type="text/css" href="../public/css/common.css">
+    <link rel="stylesheet" type="text/css" href="../public/css/product&service.css">
+    <link rel="stylesheet" type="text/css" href="../public/css/styles.css">
+    <link rel="stylesheet" type="text/css" href="../public/css/reset.css">
+</head>
+
+<body>
+    <div class="layout-page">
+         <div class="layout-header clearfix">
+            <div class="container relactive">
+                <h1 class="index-title fl">云塑官网</h1>
+                <div class="copyright fr">
+                    <p>大客户版本</p>
+                    <i class="icon icon-arrow-down"></i>
+                </div>
+                <nav class="index-nav">
+                    <a class="index-nav-item " href="index.html">首页</a>
+                    <a class="index-nav-item" href="product-service.html">产品与服务</a>
+                    <a class="index-nav-item" href="solutions.html">解决方案</a>
+                </nav>
+            </div>
+            <div class="shadow">
+                <div class="header-nav">
+                    <div class="container">
+                        <ul class="nav-menu">
+                            <li class="active">产品</li>
+                            <li>技术支持</li>
+                            <li>咨询与服务</li>
+                        </ul>
+                        <ol class="menu-content">
+                            <li class="active">
+                                <a href="mes.html">Y-MES (制造执行系统)</a>
+                                <a href="product-service.html">Y-Lable (标签设计打印系统)</a>
+                                <a href="#">Y-WMS (智能仓储系统)</a>
+                                <a href="#">Y-Plant Monitoring (综合监控系统)</a>
+                                <a href="#">Y-WMS (智能仓储系统)</a>
+                            </li>
+                            <li>
+                                <a href="cloud-service.html">云服务ECS</a>
+                                <a href="quantum-service.html">量子加密</a>
+                                <a href="ms.html">监控系统</a>
+                            </li>
+                            <li>
+                                <a href="c&s.html">咨询规划</a>
+                                <a href="#">智能化改造</a>
+                                <a href="#">系统集成</a>
+                            </li>
+                        </ol>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="layout-content">
+            <div class="banner">
+                <div class="nav">
+                    <img src="../app/images/banner.jpg" style="width:100%;">
+                </div>
+            </div>
+            <div class="content-wrap" id="scroll_wrap">
+                
+                <div class="title container"></div>
+                <div class="dashed"></div>
+                <div class="infoList">
+                    <div class="info-item info-item1">
+                        <p><strong>低成本</strong>存在需要在多个客户端都够买license并在所有系统中实现标签功能并重复投资的现象</p>
+                    </div>
+                    <div class="info-item info-item2">
+                        <p><strong>标准化</strong>存在将多个系统各自持有的标签模板进行统一管理的需求</p>
+                    </div>
+                    <div class="info-item info-item3">
+                        <p><strong>标签版本管理</strong>需要追溯标签变更的过程、版本、以及更改原因，并对其审批发布</p>
+                    </div>
+                    <div class="info-item info-item4">
+                        <p><strong>资产管理</strong>需要了解标签打印机的数量、工作状态、并予以执行作业分流</p>
+                    </div>
+                    <div class="info-item info-item5">
+                        <p><strong>可视化</strong>需要了解标签打印机的数量、工作状态、并予以执行作业分流</p>
+                    </div>
+                    <div class="info-item info-item6">
+                        <p><strong>专业度低</strong>需要非专业人士也可设计，而非专业的编程人员</p>
+                    </div>
+                </div>
+                <div class="layout-footer">
+                    <div class="footer-content container">
+                        <div class="icon">
+                            <i onclick="selectTab(0)">关于我们</i>
+                            <i onclick="selectTab(1)">大事记</i>
+                            <i onclick="selectTab(2)">团队介绍</i>
+                            <i onclick="selectTab(3)">新闻动态</i>
+                        </div>
+                        <p>Copyright©2013-2017 Suwei All Rights Reserved 南京塑维网络科技有限公司 版权所有 网站备案号：苏ICP备17030248号-1</p>
+                        <div class="ewm">
+                            <img src="../app/images/qrcode.jpg" alt="">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="../public/js/jquery-3.2.1.min.js"></script>
+    <script src="../public/js/animate.js"></script>
+    <script>
+        $(function(){
+            function isScroll (id){
+                var wrap = $(id),
+                    body = $("body"),
+                    banner_height = $(".banner").height(),
+                    head_height = $(".layout-header").height(),
+                    body_height = body.height;
+                wrap_top = banner_height+head_height;
+                wrap.css("margin-top",wrap_top+"px");
+                $(window).on("scroll",function(){
+                    var top = body.scrollTop();
+                        if(top<body_height){
+                            wrap.css({
+                                zIndex : 102,
+                                top : -top
+                            })
+                        }else{
+                            wrap.css({
+                                zIndex : 102,
+                                top : body_height
+                            })
+                        }
+                })
+            }
+            isScroll("#scroll_wrap");
+            $(".info-item1").addClass("fade-in");
+            $(".info-item2").addClass("fade-in");
+            $(".info-item3").addClass("fade-in");
+            $(".info-item4").addClass("fade-in");
+            $(".info-item5").addClass("fade-in");
+            $(".info-item6").addClass("fade-in");
+        })
+    </script>
+</body>
+
+</html>

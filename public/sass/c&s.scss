@@ -1,0 +1,110 @@
+@import "var.scss";
+@import "compass/css3";
+.layout-content {
+    .banner {
+        width: 100%;
+        height: per(428px);
+        display: inline-block;
+    }
+    .item_first {
+        margin-top: per(50px);
+    }
+    .items {
+        margin-bottom: per(40px);
+        border: 1px solid #e1e1e1;
+        margin-top: per(50px);
+        &:nth-child(2) {
+            margin-top: 0;
+        }
+        &:nth-child(3) {
+            margin-top: 0;
+        }
+    }
+    .items1{
+        @include transition(all 1.5s);
+        @include transform(translateY(1000px));
+        &.fade-in{
+            @include transition(all 1.5s);
+            @include transform(translateY(0px));
+        }
+    }
+    .items2{
+        @include transition(all 2s);
+        @include transform(translateY(1000px));
+        &.fade-in{
+            @include transition(all 2s);
+            @include transform(translateY(0px));
+        }
+    }
+    .items3{
+        @include transition(all 2.5s);
+        @include transform(translateY(1000px));
+        &.fade-in{
+            @include transition(all 2.5s);
+            @include transform(translateY(0px));
+        }
+    }
+    .title {
+        font-size: 18px;
+        line-height: per(50px);
+        width: 100%;
+        border-bottom: 1px solid #eee;
+        padding-left: per(26px);
+        color: $g3;
+    }
+    .content {
+        .pic {
+            position: relative;
+            .pic-item {
+                width: 550px;
+                height: 206px;
+                position: absolute;
+                top: 26px;
+                left: 0;
+            }
+        }
+        .info {
+            padding: per(30px) 0;
+            width: per(250px);
+            margin-right: per(30px);
+            margin-left: 550px;
+            p {
+                font-size: 14px;
+                color: #494949;
+            }
+            span {
+                color: #767676;
+                font-size: 12px;
+            }
+        }
+        .service-info {
+            padding: per(30px) 0 per(30px) per(20px);
+            width: per(350px);
+            border-left: 1px solid #e1e1e1;
+            li {
+                text-indent: per(40px);
+                line-height: per(54px);
+                color: #767676;
+                font-size: 12px;
+                position: relative;
+                &:last-child {
+                    margin-bottom: 0;
+                }
+                &:after {
+                    content: '';
+                    position: absolute;
+                    left: 0;
+                    top: per(5px);
+                    width: per(37px);
+                    height: per(37px);
+                    background: url($img-url + 'icon2.png') no-repeat per(-3px) per(-700px);
+                    background-size: 960%;
+                }
+            }
+            p {
+                font-size: 14px;
+                color: #494949;
+            }
+        }
+    }
+}

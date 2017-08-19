@@ -1,0 +1,178 @@
+@import "compass/css3";
+@import "var.scss";
+.layout-content {
+    .banner {
+        width: 100%;
+        height: per(428px);
+        display: inline-block;
+    }
+    .content {
+        padding-top: per(60px);
+        .main-title {
+            font-size: 14px;
+            color: $g3;
+            margin-bottom: per(96px);
+            .title {
+                font-size: 28px;
+                text-align: center;
+                margin-bottom: per(44px);
+            }
+        }
+        span {
+            font-size: 18px;
+        }
+        .contentList {
+            margin-top: per(48px);
+            margin-bottom: per(120px);
+            .contentItems {
+                font-size: 12px;
+                color: #696969;
+                padding-left: per(92px);
+                margin-bottom: per(84px);
+                .title {
+                    color: $g3;
+                    font-size: 18px;
+                    position: relative;
+                }
+                &:first-child {
+                    position: relative;
+                    &::before {
+                        content: "";
+                        position: absolute;
+                        top: 0;
+                        left: per(-1118px);
+                        right: 0;
+                        bottom: 0;
+                        margin: auto;
+                        width: per(82px);
+                        height: per(82px);
+                        background: url($img-url+"icon2.png") no-repeat per(-90px) per(-264px);
+                        background-size: 448%;
+                    }
+                    transition: all .6s;
+                    @include transform(translateY(1000px));
+                    &.fade-in{
+                        @include transition(all .6s);
+                        @include transform(translateY(0px));
+                    }
+                }
+                &:last-child {
+                    position: relative;
+                    &::before {
+                        content: "";
+                        position: absolute;
+                        top: 0;
+                        left: per(-1118px);
+                        right: 0;
+                        bottom: 0;
+                        margin: auto;
+                        width: per(82px);
+                        height: per(82px);
+                        background: url($img-url+"icon2.png") no-repeat per(-90px) per(-610px);
+                        background-size: 448%;
+                    }
+                }
+                &:nth-child(2) {
+                    position: relative;
+                    &::before {
+                        content: "";
+                        position: absolute;
+                        top: 0;
+                        left: per(-1118px);
+                        right: 0;
+                        bottom: 0;
+                        margin: auto;
+                        width: per(82px);
+                        height: per(82px);
+                        background: url($img-url+"icon2.png") no-repeat per(-90px) per(-351px);
+                        background-size: 448%;
+                    }
+                    @include transition(all .8s);
+                    @include transform(translateY(1000px));
+                    &.fade-in{
+                        @include transition(all .8s);
+                        @include transform(translateY(0px));
+                    }
+                }
+                &:nth-child(3) {
+                    position: relative;
+                    &::before {
+                        content: "";
+                        position: absolute;
+                        top: 0;
+                        left: per(-1118px);
+                        right: 0;
+                        bottom: 0;
+                        margin: auto;
+                        width: per(82px);
+                        height: per(82px);
+                        background: url($img-url+"icon2.png") no-repeat per(-90px) per(-439px);
+                        background-size: 448%;
+                    }
+                    @include transition(all 1s);
+                    @include transform(translateY(1000px));
+                    &.fade-in{
+                        @include transition(all 1s);
+                        @include transform(translateY(0px));
+                    }
+                }
+                &:nth-child(4) {
+                    position: relative;
+                    &::before {
+                        content: "";
+                        position: absolute;
+                        top: 0;
+                        left: per(-1118px);
+                        right: 0;
+                        bottom: 0;
+                        margin: auto;
+                        width: per(82px);
+                        height: per(82px);
+                        background: url($img-url+"icon2.png") no-repeat per(-90px) per(-525px);
+                        background-size: 448%;
+                    }
+                }
+            }
+            .contentItems1{
+                @include transition(all 2s);
+                @include transform(translateY(1000px));
+                &.fade-in{
+                    @include transition(all 2s);
+                    @include transform(translateY(0px));
+                }
+            }
+            .contentItems2{
+                @include transition(all 2s);
+                @include transform(translateY(1000px));
+                &.fade-in{
+                    @include transition(all 2s);
+                    @include transform(translateY(0px));
+                }
+            }
+            .contentItems3{
+                @include transition(all 2s);
+                @include transform(translateY(1000px));
+                &.fade-in{
+                    @include transition(all 2s);
+                    @include transform(translateY(0px));
+                }
+            }
+            .contentItems4{
+                @include transition(all 1.5s);
+                @include transform(translateY(1000px));
+                &.fade-in{
+                    @include transition(all 1.5s);
+                    @include transform(translateY(0px));
+                }
+            }
+            .contentItems5{
+                @include transition(all 1.5s);
+                @include transform(translateY(1000px));
+                &.fade-in{
+                    @include transition(all 1.5s);
+                    @include transform(translateY(0px));
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,33 @@
+.layout-content{
+    height: 932px;
+    .title{
+        margin-top: 162px;
+        h1{
+            font-size: 24px;
+            color:#333;
+            text-align: center;
+            margin-bottom: 20px;
+        }
+        h2{
+           font-size: 12px; 
+           color:#999;
+           text-align: center;
+           margin-bottom: 76px;
+        }
+    }
+    .info{  
+        .pic{
+            float:left;
+            width: 511px;
+            height: 285px;
+            margin-right: 44px;
+            margin-bottom: 86px;
+        }
+        .info-detial{
+            font-size: 14px;
+            color:#767676;
+            line-height: 28px;
+        }
+    }
+    
+}

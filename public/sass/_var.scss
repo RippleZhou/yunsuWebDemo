@@ -1,0 +1,33 @@
+@mixin mediacy($val){
+	position: absolute;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	left: 0;
+	margin: $val;
+}
+$default-blue: #00a8ff;
+$gf: #fff;
+$g3: #333;
+$g6: #666;
+$g9: #999;
+$img-url: "../../app/images/";
+$psd-width: 1920px;
+$device-width: 1920px;
+@function per($val) {
+    @return ($device-width/$psd-width)* $val
+}
+
+@mixin imgAnimate($x:0, $y:0) {
+    $x: per($x);
+    $y: per($y);
+    background-position: $x $y;
+    background-size: 2000%;
+}
+.relative{
+    position: relative;
+    height: 100%;
+}
+body{ 
+	font-family:微软雅黑 !important;
+}

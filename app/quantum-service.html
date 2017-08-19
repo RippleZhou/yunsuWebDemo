@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>云塑-量子服务</title>
+    <link rel="stylesheet" type="text/css" href="../public/css/common.css">
+    <link rel="stylesheet" type="text/css" href="../public/css/styles.css">
+    <link rel="stylesheet" type="text/css" href="../public/css/reset.css">
+    <link rel="stylesheet" type="text/css" href="../public/css/quantum_service.css">
+</head>
+
+<body>
+    <div class="layout-page">
+         <div class="layout-header clearfix">
+            <div class="container relactive">
+                <h1 class="index-title fl">云塑官网</h1>
+                <div class="copyright fr">
+                    <p>大客户版本</p>
+                    <i class="icon icon-arrow-down"></i>
+                </div>
+                <nav class="index-nav">
+                    <a class="index-nav-item " href="index.html">首页</a>
+                    <a class="index-nav-item" href="product-service.html">产品与服务</a>
+                    <a class="index-nav-item" href="solutions.html">解决方案</a>
+                </nav>
+            </div>
+            <div class="shadow">
+                <div class="header-nav">
+                    <div class="container">
+                        <ul class="nav-menu">
+                            <li class="active">产品</li>
+                            <li>技术支持</li>
+                            <li>咨询与服务</li>
+                        </ul>
+                        <ol class="menu-content">
+                            <li class="active">
+                                <a href="mes.html">Y-MES (制造执行系统)</a>
+                                <a href="product-service.html">Y-Lable (标签设计打印系统)</a>
+                                <a href="#">Y-WMS (智能仓储系统)</a>
+                                <a href="#">Y-Plant Monitoring (综合监控系统)</a>
+                                <a href="#">Y-WMS (智能仓储系统)</a>
+                            </li>
+                            <li>
+                                <a href="cloud-service.html">云服务ECS</a>
+                                <a href="quantum-service.html">量子加密</a>
+                                <a href="ms.html">监控系统</a>
+                            </li>
+                            <li>
+                                <a href="c&s.html">咨询规划</a>
+                                <a href="#">智能化改造</a>
+                                <a href="#">系统集成</a>
+                            </li>
+                        </ol>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="layout-content">
+            <div class="banner">
+                <div class="nav">
+                    <img src="../app/images/banner.jpg" style="width:100%;">
+                </div>
+            </div>
+            <div class="content container">
+                <div class="main-title">
+                    <p class='title'>量子加密</p><br>
+                    <p>拥有中科院国盾量子提供的国家级商用密钥加密技术，为数据加密持续保价护航。</p>
+                </div>
+                <span>特征和优势</span>
+                <div class="contentList">
+                    <div class="contentItems contentItems1">
+                        <p class='title'>量子密钥</p><br>
+                        <p>自建数据中心具备多台量子密钥分发网络密码机，具备数据中心自行的的量子密钥分发能力</p>
+                    </div>
+                    <div class="contentItems contentItems2">
+                        <p class='title'>国内首款</p><br>
+                        <p>网络密码机为国家密码管理局商用密码产品型号认定产品，并为国内商用密码领域首款量子网络密码机</p>
+                    </div>
+                    <div class="contentItems contentItems3">
+                        <p class='title'>吞吐量</p><br>
+                        <p>单台密钥分发网络密码机达到1000次/秒的吞吐量及加密延时 10us的速度。</p>
+                    </div>
+                    <div class="contentItems contentItems4">
+                        <p class='title'>安全加密通道</p><br>
+                        <p>能够在工厂与数据中心建立利用量子密钥作为会话密钥加密的数据通讯安全加密隧道，保证在IP数据传输链路中无缝接入量子设备 ，在不破坏传统信息数据传输方式的前提下，实现IP网络数据的安全传输</p>
+                    </div>
+                    <div class="contentItems contentItems5">
+                        <p class='title'>密钥更新</p><br>
+                        <p>工厂单台VPN设备具备提供1.6Gbps的安全过滤带宽及密钥更新周期达到100次/秒。</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="layout-footer">
+            <div class="footer-content container">
+                <div class="icon">
+                    <i onclick="selectTab(0)">关于我们</i>
+                    <i onclick="selectTab(1)">大事记</i>
+                    <i onclick="selectTab(2)">团队介绍</i>
+                    <i onclick="selectTab(3)">新闻动态</i>
+                </div>
+                <p>Copyright©2013-2017 Suwei All Rights Reserved 南京塑维网络科技有限公司 版权所有 网站备案号：苏ICP备17030248号-1</p>
+                <div class="ewm">
+                    <img src="../app/images/qrcode.jpg" alt="">
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="../public/js/jquery-3.2.1.min.js"></script>
+    <script src="../public/js/animate.js"></script>
+    <script>
+        $(function(){
+            function isScroll (id){
+                var wrap = $(id),
+                    body = $("body"),
+                    banner_height = $(".banner").height(),
+                    head_height = $(".layout-header").height(),
+                    body_height = body.height;
+                wrap_top = banner_height+head_height;
+                wrap.css("margin-top",wrap_top+"px");
+                $(window).on("scroll",function(){
+                    var top = body.scrollTop();
+                        if(top<body_height){
+                            wrap.css({
+                                zIndex : 102,
+                                top : -top
+                            })
+                        }else{
+                            wrap.css({
+                                zIndex : 102,
+                                top : body_height
+                            })
+                        }
+                })
+            }
+            isScroll("#scroll_wrap");
+            $(".contentItems1").addClass("fade-in");
+            $(".contentItems2").addClass("fade-in");
+            $(".contentItems3").addClass("fade-in");
+            $(".contentItems4").addClass("fade-in");
+            $(".contentItems5").addClass("fade-in");
+           
+        })
+    </script>
+</body>
+
+</html>

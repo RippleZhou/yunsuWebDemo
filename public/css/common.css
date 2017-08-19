@@ -1,0 +1,334 @@
+@charset "UTF-8";
+.relative {
+  position: relative;
+  height: 100%;
+}
+
+body {
+  font-family: 微软雅黑 !important;
+}
+
+.fl {
+  float: left;
+}
+
+.fr {
+  float: right;
+}
+
+.font_40 {
+  font-size: 40px;
+}
+
+.font_24 {
+  font-size: 24px;
+}
+
+.clearfix {
+  *zoom: 1;
+}
+.clearfix::before, .clearfix::after {
+  content: "";
+  display: table;
+}
+.clearfix::after {
+  clear: both;
+}
+
+.hidden {
+  display: none;
+}
+
+.show {
+  display: block;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.fixed {
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 1000;
+}
+
+.mediacy {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  margin: auto;
+}
+
+a {
+  text-decoration: none;
+  color: #333;
+}
+
+.relactive {
+  position: relative;
+}
+
+ul,
+ol,
+li {
+  list-style: none;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+.layout-page .layout-header {
+  width: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 9999;
+  font-size: 16px;
+  line-height: 60px;
+  background-color: #fff;
+  box-shadow: 0 0 8px #e1e1e1;
+}
+.layout-page .layout-header h1 {
+  display: inline-block;
+  position: absolute;
+  left: 0;
+  top: 50%;
+  transform: translateY(-50%);
+}
+.layout-page .layout-header .index-title {
+  width: 169px;
+  height: 41px;
+  text-indent: -9999em;
+  background: url("../../app/images/logo.png") no-repeat 0 0;
+  background-size: cover;
+}
+.layout-page .layout-header .index-nav {
+  width: 326px;
+  height: 60px;
+  margin: 0 auto;
+}
+.layout-page .layout-header .index-nav .index-nav-item {
+  float: left;
+  padding: 0 25px;
+}
+.layout-page .layout-header .index-nav .index-nav-item.active, .layout-page .layout-header .index-nav .index-nav-item:hover {
+  color: #00a8ff;
+}
+.layout-page .layout-header .copyright {
+  position: relative;
+  cursor: pointer;
+}
+.layout-page .layout-header .copyright::before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: -36px;
+  width: 30px;
+  height: 24px;
+  background: url("../../app/images/icon.png") no-repeat -2px -2px;
+  background-size: 200%;
+  -moz-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  -webkit-transform: translateY(-50%);
+  transform: translateY(-50%);
+}
+.layout-page .layout-header .copyright::after {
+  content: "";
+  position: absolute;
+  top: 58%;
+  left: 84px;
+  width: 24px;
+  height: 20px;
+  background: url("../../app/images/icon.png") no-repeat -1px -60px;
+  background-size: 200%;
+  -moz-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  -webkit-transform: translateY(-50%);
+  transform: translateY(-50%);
+}
+.layout-page .layout-header .copyright .icon {
+  position: absolute;
+  top: 50%;
+  right: -24px;
+  -moz-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  -webkit-transform: translateY(-50%);
+  transform: translateY(-50%);
+}
+.layout-page .layout-header:hover .shadow {
+  display: block;
+}
+.layout-page .layout-header .shadow {
+  position: absolute;
+  top: 60px;
+  display: none;
+  width: 100%;
+  height: 256px;
+  background-color: rgba(0, 0, 0, 0.5);
+  z-index: 1;
+}
+.layout-page .layout-header .shadow .nav-menu {
+  float: left;
+  width: 170px;
+  margin-top: 16px;
+}
+.layout-page .layout-header .shadow .nav-menu li {
+  height: 50px;
+  line-height: 50px;
+  font-size: 16px;
+  color: #fff;
+  text-indent: 1em;
+  margin-bottom: 20px;
+}
+.layout-page .layout-header .shadow .nav-menu li:last-child {
+  margin-bottom: 0;
+}
+.layout-page .layout-header .shadow .nav-menu li:hover {
+  background-color: #148aed;
+  cursor: pointer;
+}
+.layout-page .layout-header .shadow .menu-content {
+  width: 100%;
+  height: 226px;
+  margin-left: 170px;
+  border-left: 1px solid #b2b1b1;
+  margin-top: 20px;
+}
+.layout-page .layout-header .shadow .menu-content li {
+  display: none;
+  font-size: 14px;
+  line-height: 72px;
+}
+.layout-page .layout-header .shadow .menu-content li.active {
+  width: 100%;
+  height: 100%;
+  display: block;
+}
+.layout-page .layout-header .shadow .menu-content li a {
+  display: block;
+  color: #fff;
+  float: left;
+  text-indent: 2em;
+  width: 320px;
+  height: 72px;
+  background: rgba(255, 255, 255, 0.2);
+  margin-left: 20px;
+  margin-bottom: 16px;
+}
+.layout-page .layout-header .shadow .menu-content li a:hover {
+  background: #0d4f8e;
+}
+.layout-page .layout-content {
+  margin-top: 60px;
+}
+.layout-page .container {
+  width: 1182px;
+  margin: 0 auto;
+}
+.layout-page .layout-footer {
+  position: relative;
+  width: 100%;
+  height: 248px;
+  background: #303030;
+}
+.layout-page .layout-footer .footer-content {
+  border: 1px solid #303030;
+  height: 248px;
+  position: relative;
+}
+.layout-page .layout-footer .footer-content .icon {
+  margin-top: 80px;
+  margin-bottom: 50px;
+}
+.layout-page .layout-footer .footer-content .icon i {
+  color: #fff;
+  font-style: normal;
+  margin-right: 74px;
+}
+.layout-page .layout-footer .footer-content .icon i:first-child {
+  margin-left: 30px;
+  position: relative;
+}
+.layout-page .layout-footer .footer-content .icon i:first-child::before {
+  content: '';
+  position: absolute;
+  left: -30px;
+  top: 0;
+  width: 24px;
+  height: 24px;
+  background: url("../../app/images/about-icon.png") no-repeat 0 0;
+  background-size: 450%;
+}
+.layout-page .layout-footer .footer-content .icon i:last-child {
+  position: relative;
+}
+.layout-page .layout-footer .footer-content .icon i:last-child::before {
+  content: '';
+  position: absolute;
+  left: -30px;
+  top: 0;
+  width: 24px;
+  height: 24px;
+  background: url("../../app/images/about-icon.png") no-repeat -82px 0;
+  background-size: 450%;
+}
+.layout-page .layout-footer .footer-content .icon i:nth-child(2) {
+  position: relative;
+}
+.layout-page .layout-footer .footer-content .icon i:nth-child(2)::before {
+  content: '';
+  position: absolute;
+  left: -30px;
+  top: 0;
+  width: 24px;
+  height: 24px;
+  background: url("../../app/images/about-icon.png") no-repeat -24px 0;
+  background-size: 450%;
+}
+.layout-page .layout-footer .footer-content .icon i:nth-child(3) {
+  position: relative;
+}
+.layout-page .layout-footer .footer-content .icon i:nth-child(3)::before {
+  content: '';
+  position: absolute;
+  left: -30px;
+  top: 0;
+  width: 24px;
+  height: 24px;
+  background: url("../../app/images/about-icon.png") no-repeat -53px 0;
+  background-size: 450%;
+}
+.layout-page .layout-footer .footer-content .icon:hover {
+  cursor: pointer;
+}
+.layout-page .layout-footer .footer-content p {
+  font-size: 12px;
+  color: #585858;
+}
+.layout-page .layout-footer .footer-content .ewm {
+  position: absolute;
+  background-color: red;
+  width: 93px;
+  height: 95px;
+  top: 50%;
+  right: 0;
+  margin-top: -49px;
+}
+.layout-page .layout-footer .footer-content .ewm::before {
+  content: "云塑客户版";
+  position: absolute;
+  bottom: -40px;
+  left: 8px;
+  width: 94px;
+  height: 16px;
+  border-radius: 10px;
+  background: #c1c1c1;
+  font-size: 12px;
+  color: #303030;
+  text-align: center;
+}

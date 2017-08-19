@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>云塑-云服务</title>
+    <link rel="stylesheet" type="text/css" href="../public/css/common.css">
+    <link rel="stylesheet" type="text/css" href="../public/css/styles.css">
+    <link rel="stylesheet" type="text/css" href="../public/css/reset.css">
+    <link rel="stylesheet" type="text/css" href="../public/css/cloud_service.css">
+</head>
+
+<body>
+    <div class="layout-page">
+         <div class="layout-header clearfix">
+            <div class="container relactive">
+                <h1 class="index-title fl">云塑官网</h1>
+                <div class="copyright fr">
+                    <p>大客户版本</p>
+                    <i class="icon icon-arrow-down"></i>
+                </div>
+                <nav class="index-nav">
+                    <a class="index-nav-item " href="index.html">首页</a>
+                    <a class="index-nav-item" href="product-service.html">产品与服务</a>
+                    <a class="index-nav-item" href="solutions.html">解决方案</a>
+                </nav>
+            </div>
+            <div class="shadow">
+                <div class="header-nav">
+                    <div class="container">
+                        <ul class="nav-menu">
+                            <li class="active">产品</li>
+                            <li>技术支持</li>
+                            <li>咨询与服务</li>
+                        </ul>
+                        <ol class="menu-content">
+                            <li class="active">
+                                <a href="mes.html">Y-MES (制造执行系统)</a>
+                                <a href="product-service.html">Y-Lable (标签设计打印系统)</a>
+                                <a href="#">Y-WMS (智能仓储系统)</a>
+                                <a href="#">Y-Plant Monitoring (综合监控系统)</a>
+                                <a href="#">Y-WMS (智能仓储系统)</a>
+                            </li>
+                            <li>
+                                <a href="cloud-service.html">云服务ECS</a>
+                                <a href="quantum-service.html">量子加密</a>
+                                <a href="ms.html">监控系统</a>
+                            </li>
+                            <li>
+                                <a href="c&s.html">咨询规划</a>
+                                <a href="#">智能化改造</a>
+                                <a href="#">系统集成</a>
+                            </li>
+                        </ol>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="layout-content">
+            <div class="banner">
+                <div class="nav">
+                    <img src="../app/images/banner.jpg"style="width:100%;" >
+                </div>
+            </div>
+            <div class="content container">
+                <div class="main-title">
+                    <p class='title'>云服务器ECS</p><br>
+                    <p>云主机ECS，是阿里云打造的云计算托管服务，旨在为合作伙伴提供与阿里相同的计算环境和网络，保障系统的安全、高效、稳定。专为打造资源弹性升级服务，帮助企业解决资源瓶颈，成就智慧物流。</p>
+                </div>
+                <span>特征和优势</span>
+                <div class="contentList">
+                    <div class="contentItems contentItems1">
+                        <p class='title'>按需购买 维护简便</p><br>
+                        <p>专享价格，现支持月付，专享为用户提供5M独立带宽。</p>
+                    </div>
+                    <div class="contentItems contentItems2">
+                        <p class='title'>方便扩展 平滑升级</p><br>
+                        <p>主机配置可平滑升级，独创服务器控制面板，管理更方便。</p>
+                    </div>
+                    <div class="contentItems contentItems3">
+                        <p class='title'>节约开支 性能卓越</p><br>
+                        <p>计算能力突出，每天一次免费备份，提供5份特享备份权利，无额外备份费用。</p>
+                    </div>
+                    <div class="contentItems contentItems4">
+                        <p class='title'>快速灵活 随需应变</p><br>
+                        <p>负载均衡服务、快照备份恢复服务、短信邮件预警、访问统计报告、应用集成。</p>
+                    </div>
+                    <div class="contentItems contentItems5">
+                        <p class='title'>硬件冗余 安全可靠</p><br>
+                        <p>自动故障迁移，快速修复故障，防止单点故障。天然防御ARP攻击及MAC欺骗，抗DDos攻击能力强。</p>
+                    </div>
+                    <div class="contentItems contentItems6">
+                        <p class='title'>7X24不间断运维服务</p><br>
+                        <p>7*24*365 NOC不间断监控、机房实地应急响应。</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="layout-footer">
+            <div class="footer-content container">
+                <div class="icon">
+                    <i onclick="selectTab(0)">关于我们</i>
+                    <i onclick="selectTab(1)">大事记</i>
+                    <i onclick="selectTab(2)">团队介绍</i>
+                    <i onclick="selectTab(3)">新闻动态</i>
+                </div>
+                <p>Copyright©2013-2017 Suwei All Rights Reserved 南京塑维网络科技有限公司 版权所有 网站备案号：苏ICP备17030248号-1</p>
+                <div class="ewm">
+                    <img src="../app/images/qrcode.jpg" alt="">
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="../public/js/jquery-3.2.1.min.js"></script>
+    <script src="../public/js/animate.js"></script>
+    <script>
+        $(function(){
+            function isScroll (id){
+                var wrap = $(id),
+                    body = $("body"),
+                    banner_height = $(".banner").height(),
+                    head_height = $(".layout-header").height(),
+                    body_height = body.height;
+                wrap_top = banner_height+head_height;
+                wrap.css("margin-top",wrap_top+"px");
+                $(window).on("scroll",function(){
+                    var top = body.scrollTop();
+                        if(top<body_height){
+                            wrap.css({
+                                zIndex : 102,
+                                top : -top
+                            })
+                        }else{
+                            wrap.css({
+                                zIndex : 102,
+                                top : body_height
+                            })
+                        }
+                })
+            }
+            isScroll("#scroll_wrap");
+            $(".contentItems1").addClass("fade-in");
+            $(".contentItems2").addClass("fade-in");
+            $(".contentItems3").addClass("fade-in");
+            $(".contentItems4").addClass("fade-in");
+            $(".contentItems5").addClass("fade-in");
+            $(".contentItems6").addClass("fade-in");
+           
+        })
+    </script>
+</body>
+
+</html>

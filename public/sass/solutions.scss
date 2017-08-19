@@ -1,0 +1,218 @@
+@import "compass/css3";
+.layout-content{
+    .banner{
+        position: fixed; 
+        top: 60px; 
+        z-index: 10;
+        width: 100%;
+        height: auto;
+        display: inline-block;
+        img{
+            width:100%;
+            height:435px;
+        }
+        ul{
+            position: absolute;
+            top: 140px;
+            left: 392px;
+            color:#fff;
+            .news_txt_line{
+                border:2px solid #fff; 
+                width:30px; 
+                position: inherit; 
+                display:inline-block;
+                margin-bottom: 10px;
+                margin-top: 10px;
+            }
+            .h1{
+                font-size: 30px;
+                line-height: 50px;
+            }
+            .h2{
+                font-size: 18px;
+                line-height: 50px;
+            }
+        }
+    }
+    .content-wrap{
+        position: relative;
+        background-color: #fff;
+    }
+   .typeClass { 
+       width:100%;
+       text-align: center; 
+       position: relative;
+       background:#FFFFFF;
+       padding-bottom: 50px;
+       overflow: hidden;
+       .content {
+           margin:30px auto;
+           display: inline-table;
+           overflow: hidden;
+           .contantImg {
+               float:left;
+               width: 522px;
+               transition: all 1s;
+               @include transform(translateY(1000px));
+               &.fade-in{
+                    transition: all 1s;
+                    @include transform(translateY(0px));
+               }
+            }
+            .contant_title {
+                margin-left: 72px;
+                width: 588px;
+                float: left;
+                margin-top: 25px;
+                text-align: left;
+                padding-top: 30px;
+                .span1 {
+                    font-size: 16px;
+                    width: 100%;
+                    float: left;
+                    margin-bottom: 20px;
+                    color:#333;
+                }
+               @include transition(all 1s);
+               @include transform(translateY(1000px));
+               &.fade-in{
+                @include transition(all 1s);
+                @include transform(translateY(0px));
+               }
+            }
+            .span2 {
+                float:left;
+                color: #a4a4a4;
+                font-size: 14px;
+                line-height: 26px;
+            }
+        }
+        .type_tab {
+            margin: 0 auto;
+            padding: 0;
+            display: inline-block;
+            ul {
+                margin: 0;
+                padding: 0;
+                line-height: 20px;
+                padding-top: -10px;
+                display: inline-block;
+                width: 100%;
+                li {
+                    padding: 10px 0px;
+                    display: inline-block;
+                    background:#f9f9f9;
+                    white-space:nowrap;
+                    width:587px;
+                    height: 98px;
+                    text-align:left;
+                    border: 1px solid #efefef;
+                    padding-left: 40px;
+                    &.selected {
+                        background:#037be1;
+                        h3,p{
+                            color:#FFFFFF;
+                        }
+                    }
+                    h3{
+                        font-size: 24px;
+                        color:#333;
+                        margin-top: 14px;
+                        margin-bottom: 14px;
+                    }
+                    p{
+                        font-size: 14px;
+                        color:#999;
+                    }
+                    .span3 {
+                        float: right;
+                        width: 80px;
+                        margin-top: -35px;
+                        img {
+                            width: 30px; 
+                            height:30px;
+                        }
+                    }
+                }
+            }
+            
+        }
+    } 
+    .solutions {
+        width: 100%;
+        text-align: center;
+        background: #f9f9f9;
+        padding-bottom: 10px;
+        .solutions_title {
+            border-bottom: 1px solid #CCCCCC;
+            padding: 30px 0;
+            h4{
+                font-size: 18px;
+                color:#333;
+                margin-bottom: 8px;
+            }
+            p{
+                font-size: 12px;
+                color:#999;
+            }
+        }
+        .effects {
+            height: 410px;
+            margin: 60px auto;
+            .img {
+                position: relative;
+                float: left;
+                margin-bottom: 5px;
+                width: 280px;
+                height: 410px;
+                overflow: hidden;
+                margin-right: 18px;
+                background: #fff;
+                text-align: left;
+                text-indent: 20px;
+                &:last-child{
+                    margin-right: 0;
+                }
+                img {
+                    display: block;
+                    margin: 0;
+                    padding: 0;
+                    width: 282px;
+                    height: 305px;
+                }
+            }
+        }
+        .swiper-slide1{
+            @include transition( all .6s);
+            @include transform(translateY(1000px));
+            &.fade-in{
+                @include transition(all .6s);
+                @include transform(translateY(0px));
+            }
+        }
+        .swiper-slide2{
+            @include transition(all .9s);
+            @include transform(translateY(1000px));
+            &.fade-in{
+                @include transition(all .9s);
+                @include transform(translateY(0px));
+            }
+        }
+        .swiper-slide3{
+            @include transition (all 1.1s);
+            @include transform( translateY(1000px));
+            &.fade-in{
+                @include transition(all 1.1s);
+                @include transform(translateY(0px));
+            }
+        }
+        .swiper-slide4{
+            @include transition(all 1.3s);
+            @include transform (translateY(1000px));
+            &.fade-in{
+                @include transition(all 1.3s);
+               @include  transform(translateY(0px));
+            }
+        }
+    } 
+}

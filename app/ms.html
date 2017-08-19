@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>云塑-监控系统</title>
+    <link rel="stylesheet" type="text/css" href="../public/css/common.css">
+    <link rel="stylesheet" type="text/css" href="../public/css/styles.css">
+    <link rel="stylesheet" type="text/css" href="../public/css/reset.css">
+    <link rel="stylesheet" type="text/css" href="../public/css/ms.css">
+</head>
+
+<body>
+    <div class="layout-page">
+         <div class="layout-header clearfix">
+            <div class="container relactive">
+                <h1 class="index-title fl">云塑官网</h1>
+                <div class="copyright fr">
+                    <p>大客户版本</p>
+                    <i class="icon icon-arrow-down"></i>
+                </div>
+                <nav class="index-nav">
+                    <a class="index-nav-item " href="index.html">首页</a>
+                    <a class="index-nav-item" href="product-service.html">产品与服务</a>
+                    <a class="index-nav-item" href="solutions.html">解决方案</a>
+                </nav>
+            </div>
+            <div class="shadow">
+                <div class="header-nav">
+                    <div class="container">
+                        <ul class="nav-menu">
+                            <li class="active">产品</li>
+                            <li>技术支持</li>
+                            <li>咨询与服务</li>
+                        </ul>
+                        <ol class="menu-content">
+                            <li class="active">
+                                <a href="mes.html">Y-MES (制造执行系统)</a>
+                                <a href="product-service.html">Y-Lable (标签设计打印系统)</a>
+                                <a href="#">Y-WMS (智能仓储系统)</a>
+                                <a href="#">Y-Plant Monitoring (综合监控系统)</a>
+                                <a href="#">Y-WMS (智能仓储系统)</a>
+                            </li>
+                            <li>
+                                <a href="cloud-service.html">云服务ECS</a>
+                                <a href="quantum-service.html">量子加密</a>
+                                <a href="ms.html">监控系统</a>
+                            </li>
+                            <li>
+                                <a href="c&s.html">咨询规划</a>
+                                <a href="#">智能化改造</a>
+                                <a href="#">系统集成</a>
+                            </li>
+                        </ol>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="layout-content">
+            <div class="banner">
+                <div class="nav">
+                    <img src="../app/images/banner.jpg" style="width:100%;">
+                </div>
+            </div>
+            <div class="content container">
+                <div class="main-title">
+                    <p class='title'>监控系统</p><br>
+                    <p>全面掌控业务系统运行情况，搭建覆盖全栈的业务监控，拥有实时交互仪表盘，关键性能指标完全可视化，相关管理信息瀑布推送 事件，全面实时掌握业务系统信息</p>
+                </div>
+                <span>特征和优势</span>
+                <div class="contentList">
+                    <div class="contentItems contentItems1">
+                        <p class='title'>端对端的深度监控</p><br>
+                        <p>应用前端到后台的端对端的深度监控，准确定位应用故障</p>
+                    </div>
+                    <div class="contentItems contentItems2">
+                        <p class='title'>统一接收、处理</p><br>
+                        <p>统一接收、处理，提供处置策略，避免告警信息离散式处理</p>
+                    </div>
+                    <div class="contentItems contentItems3">
+                        <p class='title'>运维可视化</p><br>
+                        <p>集中告警 运维可视化</p>
+                    </div>
+                    <div class="contentItems contentItems4">
+                        <p class='title'>全方位监控</p><br>
+                        <p>网络监控 系统监控 应用监控</p>
+                    </div>
+                    <div class="contentItems contentItems5">
+                        <p class='title'>业务交易的应用深度监控</p><br>
+                        <p>业务交易的应用深度监控成为应用健康稳定运行的基石</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="layout-footer">
+            <div class="footer-content container">
+                <div class="icon">
+                    <i onclick="selectTab(0)">关于我们</i>
+                    <i onclick="selectTab(1)">大事记</i>
+                    <i onclick="selectTab(2)">团队介绍</i>
+                    <i onclick="selectTab(3)">新闻动态</i>
+                </div>
+                <p>Copyright©2013-2017 Suwei All Rights Reserved 南京塑维网络科技有限公司 版权所有 网站备案号：苏ICP备17030248号-1</p>
+                <div class="ewm">
+                    <img src="../app/images/qrcode.jpg" alt="">
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="../public/js/jquery-3.2.1.min.js"></script>
+    <script src="../public/js/animate.js"></script>
+    <script>
+        $(function(){
+            $(".contentItems1").addClass("fade-in");
+            $(".contentItems2").addClass("fade-in");
+            $(".contentItems3").addClass("fade-in");
+            $(".contentItems4").addClass("fade-in");
+            $(".contentItems5").addClass("fade-in");
+        })
+        
+    </script>
+</body>
+
+</html>

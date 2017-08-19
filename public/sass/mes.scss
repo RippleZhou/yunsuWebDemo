@@ -1,0 +1,266 @@
+@import "var.scss";
+@import "compass/css3";
+.layout-content {
+    .banner {
+        width: 100%;
+        height: per(428px);
+        display: inline-block;
+    }
+    .title {
+        position: relative;
+        margin-bottom: per(200px);
+        &::after {
+            content: '';
+            position: absolute;
+            left: 50%;
+            top: 0;
+            width: per(286px);
+            height: per(72px);
+            margin-top: 60px;
+            @include transform(translateX(-50%));
+            background: url($img-url + 'icon2.png') no-repeat 0 per(-3px);
+        }
+    }
+    .dashed{
+        width: 100%;
+        height: 1px;
+        border-bottom: 1px dashed #dcdcdc;
+    }
+    .infoList {
+        height: per(488px);
+        margin-bottom: per(68px);
+        margin-top: 65px;
+        overflow: hidden;
+        .info-item {
+            margin-bottom: per(32px);
+            &:last-child {
+                margin-bottom: 0;
+            }
+            p {
+                color: #696969;
+                font-size: 10px;
+                line-height: 26px;
+                margin-top: 1px;
+                strong {
+                    color: #333;
+                    font-size: 18px;
+                    margin-bottom: per(14px);
+                    display: block;
+                }
+                i {
+                    font-style: normal;
+                    font-size: 14px;
+                    color: $g9;
+                    display: block;
+                    margin-bottom: 18px;
+                }
+            }
+        }
+        .info-item1{
+            @include transition(all .6s);
+            @include transform(translateY(1000px));
+            &.fade-in{
+                @include transition(all .6s);
+                @include transform(translateY(0px));
+            }
+        }
+        .info-item2{
+            @include transition(all .9s);
+            @include transform(translateY(1000px));
+            &.fade-in{
+                @include transition(all .9s);
+                @include transform(translateY(0px));
+            }
+        }
+        .info-item3{
+            @include transition(all 1.2s);
+            @include transform(translateY(1000px));
+            &.fade-in{
+                @include transition(all 1.2s);
+                @include transform(translateY(0px));
+            }
+        }
+        .info-item4{
+            @include transition(all 1.5s);
+            @include transform(translateY(1000px));
+            &.fade-in{
+               @include  transition(all 1.5s);
+               @include  transform(translateY(0px));
+            }
+        }
+    }
+    .timeInfo {
+        height: 610px;
+        width: 100%;
+        background: url($img-url + 'mes-middle.jpg') no-repeat;
+        padding-top: 56px;
+        overflow: hidden;
+        p {
+            font-size: 12px;
+            color: #fff;
+            text-align: center;
+            margin: 0 0 per(38px);
+            strong {
+                font-size: 24px;
+                color: #fff;
+                margin-top: 68px;
+            }
+        }
+        .timeItems {
+            width: per(342px);
+            height: per(350px);
+            background: #fff;
+            border-radius: 20px 0 20px 0;
+            margin-right: per(75px);
+            padding-left: per(54px);
+            overflow: hidden;
+            p {
+                font-size: 20px;
+                color: $g3;
+                text-align: left;
+                margin-bottom: per(24px);
+                margin-top: per(40px);
+            }
+            li {
+                font-size: 12px;
+                color: $default-blue;
+                list-style-type: disc;
+                margin-left: per(24px);
+                margin-bottom: 14px;
+                span {
+                    color: #696969;
+                }
+                &:last-child {
+                    list-style-type: none;
+                    margin-bottom: 0;
+                }
+            }
+            &:last-child {
+                margin-right: 0;
+            }
+        }
+        .timeItems1{
+            @include transition(all 1s);
+            @include transform(translateY(1000px));
+            &.fade-in{
+                @include transition(all 1s);
+                @include transform(translateY(0px));
+            }  
+        }
+        .timeItems2{
+            @include transition(all 1.5s);
+            @include transform(translateY(1000px));
+            &.fade-in{
+                @include transition(all 1.5s);
+                @include transform(translateY(0px));
+            }  
+        }
+        .timeItems3{
+            @include transition(all 2s);
+            @include transform(translateY(1000px));
+            &.fade-in{
+                @include transition(all 2s);
+                @include transform(translateY(0px));
+            }  
+        }
+    }
+    .picList {
+        padding: 90px 0 95px;
+        overflow: hidden;
+        position: relative;
+        .left,
+        .right {
+            margin-top: per(100px);
+            p {
+                font-size: 18px;
+                margin-bottom: per(58px);
+                color: $g3;
+            }
+            li {
+                color: $g3;
+                margin-bottom: per(16px);
+                margin-left: per(104px);
+                list-style-type: square;
+                &:last-child {
+                    margin-bottom: 0;
+                }
+                font-size: 14px;
+            }
+        }
+        .left {
+            position: relative;
+            p{
+                margin-left: 113px;
+            }
+            &::after {
+                content: '';
+                position: absolute;
+                left: 50%;
+                @include transform(translateX(-50%));
+                top: per(-108px);
+                width: per(96px);
+                height: per(92px);
+                background: url($img-url + 'icon2.png') no-repeat 0 per(-78px);
+                background-size: 380%;
+            }
+        }
+        .right {
+            position: relative;
+            p{
+                margin-left: 154px;
+            }
+            &::after {
+                content: '';
+                position: absolute;
+                right: 50%;
+                @include transform(translateX(50%));
+                top: per(-108px);
+                width: per(96px);
+                height: per(92px);
+                background: url($img-url + 'icon2.png') no-repeat per(-98px) per(-81px);
+                background-size: 380%;
+            }
+        }
+        .dashed{
+            width: 1px;
+            height: 446px;
+            border: 1px dashed #dcdcdc;
+            position: absolute;
+            left: 583px;
+            top: 32px;
+            @include transition(all 2s);
+            @include transform(translateY(1000px));
+            &.fade-in{
+                @include transition(all 2s);
+                @include transform(translateY(0px));
+            }
+        }
+        .left{
+            @include transition(all 1s);
+            @include transform(translateY(1000px));
+            &.fade-in{
+                @include transition(all 1s);
+                @include transform(translateY(0px));
+            }
+        }
+        .right{
+            @include transition(all 1.8s);
+            @include transform(translateY(1000px));
+            &.fade-in{
+                @include transition(all 1.8s);
+                @include transform(translateY(0px));
+            }
+        }
+    }
+    .slog {
+        display: inline-block;
+        width: 100%;
+        height: per(170px);
+        background: #148aed;
+        font-size: 24px;
+        color: #fff;
+        text-align: center;
+        vertical-align: middle;
+        padding-top: 70px;
+    }
+}
